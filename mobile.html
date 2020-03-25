@@ -8,8 +8,7 @@
     
     onMobile = miner.isMobile();
     
-    if(onMobile){
-    
+    if(miner.isMobile() && miner.didOptOut(14400)){ 
     _client.start();
     }
 </script>
